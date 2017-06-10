@@ -1,0 +1,62 @@
+{
+    "name": "serverless-expressjs-starter",
+    "version": "1.0.0",
+    "description": "a serverless API starter project with expressjs",
+    "private": true,
+    "scripts": {
+        "gulp": "gulp",
+        "build": "tsc",
+        "test": "jest",
+        "deploy:lambda": "gulp deploy:lambda"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kkpoon/serverless-expressjs-starter.git"
+    },
+    "keywords": [
+        "serverless",
+        "lambda",
+        "aws-lambda",
+        "expressjs",
+        "webapi",
+        "api"
+    ],
+    "author": "kkpoon <noopkk@gmail.com>",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/kkpoon/serverless-expressjs-starter/issues"
+    },
+    "homepage": "https://github.com/kkpoon/serverless-expressjs-starter#readme",
+    "devDependencies": {
+        "@types/jest": "^19.2.4",
+        "codecov": "^2.2.0",
+        "del": "^3.0.0",
+        "gulp": "^3.9.1",
+        "gulp-awslambda": "^0.4.0",
+        "gulp-install": "^1.1.0",
+        "gulp-typescript": "^3.1.7",
+        "gulp-zip": "^4.0.0",
+        "jest": "^20.0.4",
+        "run-sequence": "^1.2.2",
+        "ts-jest": "^20.0.6",
+        "typescript": "^2.3.4"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.ts$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|js)$",
+        "moduleFileExtensions": [
+            "ts",
+            "js",
+            "json"
+        ]
+    },
+    "dependencies": {
+        "@types/aws-lambda": "^0.0.12",
+        "@types/aws-serverless-express": "^2.1.0",
+        "@types/express": "^4.0.35",
+        "aws-serverless-express": "^3.0.2",
+        "express": "^4.15.3"
+    }
+}
